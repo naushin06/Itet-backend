@@ -1,0 +1,18 @@
+{
+  "name": "itet-backend",
+  "version": "1.0.0",
+  "description": "itet-backend",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec node app.js --port 4000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mongoose": "^7.2.4",
+    "nodemon": "^2.0.22"
+  }
+}
