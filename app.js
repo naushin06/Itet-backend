@@ -3,8 +3,15 @@ const app=express();
 const cors=require('cors');
 const mongoose=require("mongoose")
 const port = process.env.PORT || 5000
-
-app.use(cors());
+const corsOptions = {
+    origin: "https://itet-frontend.vercel.app/", // Replace with your frontend's domain
+    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+    credentials: true
+  };
+  
+  app.use(cors(corsOptions));
+  
+// app.use(cors());
 app.use(express.json())
 
 mongoose.connect("mongodb+srv://itexperttraining:itExpertraining_2023@cluster0.y1ctxvj.mongodb.net/ITET-EVENTMANAGMENT").then(function(){
