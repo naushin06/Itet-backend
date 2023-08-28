@@ -18,7 +18,7 @@ mongoose.connect("mongodb+srv://itexperttraining:itExpertraining_2023@cluster0.y
     console.log("db connected");
 })
 
-app.listen(3001,function(){
+app.listen(port,function(){
     console.log("app started to run on 3001")
 })
 app.use('/',require("./Routes/userRoutes"))
