@@ -7,6 +7,7 @@ const EventSchema={
     ttime:String,
     tname:String,
     desc:String,
+    mode:String,
     decimal:String,
 }
 const Event=mongoose.model('Event',EventSchema)
