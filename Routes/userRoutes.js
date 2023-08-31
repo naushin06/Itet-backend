@@ -10,7 +10,7 @@ router.route("/create").post((req,res) =>{
    const ttime=req.body.ttime
    const tname=req.body.tname;
    const desc=req.body.desc ;
-   const mode:req.body.mode
+   const mode=req.body.mode
     const newEvent=new Event({
         name,
        fdate,
